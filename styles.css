@@ -469,9 +469,13 @@ footer{
     #sect3-articles{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        padding-right: 0;
+        padding-left: 0;
     }
     .article{
         margin: auto;
+        margin-right: auto;
         margin-top: 30px;
     }
 
