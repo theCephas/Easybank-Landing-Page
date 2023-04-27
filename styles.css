@@ -90,7 +90,7 @@ body {
 }
 
 .btn1>button:hover {
-    background-image: linear-gradient(to right, hsl(136, 43%, 63%), hsl(192, 51%, 70%));
+    background-image: linear-gradient(to right, hsl(136, 82%, 70%), hsl(192, 77%, 62%));
     color: hsl(220, 16%, 96%);
 }
 
@@ -107,7 +107,7 @@ main {
 
 .sect1-p {
     margin-top: 200px;
-
+    padding-left: 60px;
 }
 
 .sect1-p>h1 {
@@ -132,7 +132,7 @@ main {
 }
 
 .sect1-p>button:hover {
-    background-image: linear-gradient(to right, hsl(136, 43%, 63%), hsl(192, 51%, 70%));
+    background-image: linear-gradient(to right, hsl(136, 85%, 62%), hsl(192, 87%, 58%));
     color: hsl(220, 16%, 96%);
 }
 
@@ -154,7 +154,10 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
+.sect2-p{
+    padding-left: 60px;
+    padding-right: 60px;
+}
 h2 {
     color: hsl(233, 26%, 24%);
 }
@@ -178,11 +181,15 @@ h4 {
     padding-bottom: 10px;
     padding-top: 10px;
 }
-
+.choices>p{
+    font-size: 1.2rem;
+}
 .sect2-choices {
     display: grid;
     grid-template-columns: auto auto auto auto;
     column-gap: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 #sect3{
@@ -190,22 +197,29 @@ h4 {
     padding-bottom: 30px;
 }
 #sect3-articles{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
-    place-content: center;
-    
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .article{
     background-color: white;
     border-radius: 20px;
-    
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
     margin-bottom: 20px;
     transition: 0.2s;
     transition-property: transform;
+}
+@media screen and (max-width: 900px){
+    #sect3-articles{
+        display: grid;
+        grid-template-columns: auto auto;
+        place-content: center;
+        gap: 20px;
+    }
 }
 .article:hover{
     transform: scale(1.05);
@@ -213,7 +227,7 @@ h4 {
     box-shadow: 0px 2px 5px 9px #f2f4f5;
 }
 .article>img{
-    height: 200px;
+    height: 150px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
@@ -223,6 +237,7 @@ h3{
 }
 .article-texts{
     padding: 20px;
+    
     line-height: 22px;
 }
 .article-texts>.author{
@@ -283,7 +298,7 @@ footer{
     margin-bottom: 20px;
 }
 .footer4>button:hover {
-    background-image: linear-gradient(to right, hsl(136, 73%, 65%), hsl(191, 82%, 68%));
+    background-image: linear-gradient(to right, hsl(136, 85%, 62%), hsl(192, 87%, 58%));
     color: hsl(220, 16%, 96%);
 }
 .attribution {
@@ -326,8 +341,14 @@ footer{
         position: absolute;
         right: 10px;
         margin-top: 17px;
+        
+    
+    /* .pressed{ */
+        animation: mymove 1s;
     }
-
+    @keyframes mymove {
+        20% {transform: rotate(-720deg);}
+    }
     .closeIcon {
         display: none;
         position: absolute;
