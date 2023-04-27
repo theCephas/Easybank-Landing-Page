@@ -409,17 +409,21 @@ footer{
     }
 
     .sect1-p {
-        margin-top: 100px;
+        margin-top: 70px;
         text-align: center;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .sect1-p>h1 {
         text-align: center;
         padding-bottom: 20px;
+        margin: auto;
+        width: 300px;
     }
 
     .sect1-p>p {
-        width: auto;
+        width: 350px;
         margin: auto;
         text-align: center;
         padding-bottom: 20px;
@@ -427,6 +431,8 @@ footer{
 
     .sect2-p {
         text-align: center;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .sect2-p>p {
@@ -440,6 +446,8 @@ footer{
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .choices>img {
